@@ -22,7 +22,7 @@ A commercial use license is available from Genivia Inc., contact@genivia.com
 extern "C" {
 #endif
 
-SOAP_SOURCE_STAMP("@(#) soapC.c ver 2.8.70 2018-09-12 18:12:31 GMT")
+SOAP_SOURCE_STAMP("@(#) soapC.c ver 2.8.70 2018-08-31 20:20:44 GMT")
 
 
 #ifndef WITH_NOGLOBAL

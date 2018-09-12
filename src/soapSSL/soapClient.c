@@ -20,13 +20,13 @@ A commercial use license is available from Genivia Inc., contact@genivia.com
 extern "C" {
 #endif
 
-SOAP_SOURCE_STAMP("@(#) soapClient.c ver 2.8.70 2018-09-12 18:12:31 GMT")
+SOAP_SOURCE_STAMP("@(#) soapClient.c ver 2.8.70 2018-08-31 20:20:44 GMT")
 
 
 SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns2__dispatch(struct soap *soap, const char *soap_endpoint, const char *soap_action, char *login, char *api_USCOREpass, char *msg_USCOREtype, struct ArrayOfDocumentFiles *document_USCOREfiles, struct ArrayOfRecipients *recipients, struct ArrayOfOptions *options, struct ns2__dispatchResponse *_param_1)
 {	struct ns2__dispatch soap_tmp_ns2__dispatch;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://api.postivo.pl/webservices.php";
+		soap_endpoint = "https://api.postivo.pl:443/webservices.php";
 	if (soap_action == NULL)
 		soap_action = "http://api.postivo.pl#dispatch";
 	soap_tmp_ns2__dispatch.login = login;
@@ -84,7 +84,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns2__dispatch(struct soap *soap, const char 
 SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns2__getDispatchStatus(struct soap *soap, const char *soap_endpoint, const char *soap_action, char *login, char *api_USCOREpass, struct ArrayOfDispatchIds *dispatch_USCOREids, struct ns2__getDispatchStatusResponse *_param_1)
 {	struct ns2__getDispatchStatus soap_tmp_ns2__getDispatchStatus;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://api.postivo.pl/webservices.php";
+		soap_endpoint = "https://api.postivo.pl:443/webservices.php";
 	if (soap_action == NULL)
 		soap_action = "http://api.postivo.pl#getDispatchStatus";
 	soap_tmp_ns2__getDispatchStatus.login = login;
@@ -139,7 +139,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns2__getDispatchStatus(struct soap *soap, co
 SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns2__getBalance(struct soap *soap, const char *soap_endpoint, const char *soap_action, char *login, char *api_USCOREpass, struct ns2__getBalanceResponse *_param_1)
 {	struct ns2__getBalance soap_tmp_ns2__getBalance;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://api.postivo.pl/webservices.php";
+		soap_endpoint = "https://api.postivo.pl:443/webservices.php";
 	if (soap_action == NULL)
 		soap_action = "http://api.postivo.pl#getBalance";
 	soap_tmp_ns2__getBalance.login = login;
@@ -193,7 +193,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns2__getBalance(struct soap *soap, const cha
 SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns2__getConfigProfiles(struct soap *soap, const char *soap_endpoint, const char *soap_action, char *login, char *api_USCOREpass, char *msg_USCOREtype, struct ns2__getConfigProfilesResponse *_param_1)
 {	struct ns2__getConfigProfiles soap_tmp_ns2__getConfigProfiles;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://api.postivo.pl/webservices.php";
+		soap_endpoint = "https://api.postivo.pl:443/webservices.php";
 	if (soap_action == NULL)
 		soap_action = "http://api.postivo.pl#getConfigProfiles";
 	soap_tmp_ns2__getConfigProfiles.login = login;
@@ -248,7 +248,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns2__getConfigProfiles(struct soap *soap, co
 SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns2__getSenders(struct soap *soap, const char *soap_endpoint, const char *soap_action, char *login, char *api_USCOREpass, struct ns2__getSendersResponse *_param_1)
 {	struct ns2__getSenders soap_tmp_ns2__getSenders;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://api.postivo.pl/webservices.php";
+		soap_endpoint = "https://api.postivo.pl:443/webservices.php";
 	if (soap_action == NULL)
 		soap_action = "http://api.postivo.pl#getSenders";
 	soap_tmp_ns2__getSenders.login = login;
@@ -302,7 +302,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns2__getSenders(struct soap *soap, const cha
 SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns2__getCertificate(struct soap *soap, const char *soap_endpoint, const char *soap_action, char *login, char *api_USCOREpass, char *dispatch_USCOREid, int certificate_USCOREtype, struct ns2__getCertificateResponse *_param_1)
 {	struct ns2__getCertificate soap_tmp_ns2__getCertificate;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://api.postivo.pl/webservices.php";
+		soap_endpoint = "https://api.postivo.pl:443/webservices.php";
 	if (soap_action == NULL)
 		soap_action = "http://api.postivo.pl#getCertificate";
 	soap_tmp_ns2__getCertificate.login = login;
@@ -358,7 +358,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns2__getCertificate(struct soap *soap, const
 SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns2__getPrice(struct soap *soap, const char *soap_endpoint, const char *soap_action, char *login, char *api_USCOREpass, char *msg_USCOREtype, struct ArrayOfDocumentFiles *document_USCOREfiles, struct ArrayOfRecipients *recipients, int config_USCOREid, struct ns2__getPriceResponse *_param_1)
 {	struct ns2__getPrice soap_tmp_ns2__getPrice;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://api.postivo.pl/webservices.php";
+		soap_endpoint = "https://api.postivo.pl:443/webservices.php";
 	if (soap_action == NULL)
 		soap_action = "http://api.postivo.pl#getPrice";
 	soap_tmp_ns2__getPrice.login = login;
@@ -416,7 +416,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns2__getPrice(struct soap *soap, const char 
 SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns2__addSender(struct soap *soap, const char *soap_endpoint, const char *soap_action, char *login, char *api_USCOREpass, struct ns1__SenderData *sender_USCOREdata, enum xsd__boolean accept_USCOREterms, struct ns2__addSenderResponse *_param_1)
 {	struct ns2__addSender soap_tmp_ns2__addSender;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://api.postivo.pl/webservices.php";
+		soap_endpoint = "https://api.postivo.pl:443/webservices.php";
 	if (soap_action == NULL)
 		soap_action = "http://api.postivo.pl#addSender";
 	soap_tmp_ns2__addSender.login = login;
@@ -472,7 +472,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns2__addSender(struct soap *soap, const char
 SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns2__verifySender(struct soap *soap, const char *soap_endpoint, const char *soap_action, char *login, char *api_USCOREpass, int sender_USCOREid, char *verification_USCOREcode, struct ns2__verifySenderResponse *_param_1)
 {	struct ns2__verifySender soap_tmp_ns2__verifySender;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://api.postivo.pl/webservices.php";
+		soap_endpoint = "https://api.postivo.pl:443/webservices.php";
 	if (soap_action == NULL)
 		soap_action = "http://api.postivo.pl#verifySender";
 	soap_tmp_ns2__verifySender.login = login;
@@ -528,7 +528,7 @@ SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns2__verifySender(struct soap *soap, const c
 SOAP_FMAC5 int SOAP_FMAC6 soap_call_ns2__removeSender(struct soap *soap, const char *soap_endpoint, const char *soap_action, char *login, char *api_USCOREpass, int sender_USCOREid, struct ns2__removeSenderResponse *_param_1)
 {	struct ns2__removeSender soap_tmp_ns2__removeSender;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://api.postivo.pl/webservices.php";
+		soap_endpoint = "https://api.postivo.pl:443/webservices.php";
 	if (soap_action == NULL)
 		soap_action = "http://api.postivo.pl#removeSender";
 	soap_tmp_ns2__removeSender.login = login;
